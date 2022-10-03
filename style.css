@@ -1,0 +1,112 @@
+:root{
+    --visi : hidden;
+}
+body{
+    background-image: url(./images/redbull_background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color:rgb(255,255,255);
+    text-decoration: none;
+}
+.logoimg{
+    border-radius: 50%;
+}
+.fa-solid{
+    color:rgb(255,255,255);
+}
+section{
+    width:50%;
+    margin:auto;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+}
+.innerLinks{
+    position:relative;
+    background-color: transparent;
+    padding:20px;
+    border:2px solid rgb(255,255,255);
+    border-radius:30px;
+    margin:20px;
+}
+.link-icon{
+    position:absolute;
+    font-size: 20px;
+    font-weight:bolder;
+    right:4% !important;
+    visibility: var(--visi);
+}
+.innerLinks:hover{
+
+    background-color: rgb(255,255,255);
+    color:black;
+    transition:0.1s ease-in;   
+    --visi:visible;
+}
+.contact{
+    margin:30px 0px 20px 0px;
+}
+.contact-icon{
+    font-size: 30px;
+    margin:10px;
+}
+.contact-icon:hover{
+    font-size:34px;
+    margin:5px;
+    transition:0.1s ease-in;
+}
+.navbar{
+    position: relative;
+    display: flex;
+}
+.nav-left{
+    position:absolute;
+    left:20px;
+    padding:5px 10px 10px 10px;
+    background-color:black;
+    border-radius: 100%;
+}
+.nav-right{
+    position:absolute;
+    right:20px;
+    padding:10px;
+    background-color: black;
+    border-radius: 20px;
+}
+.nav-right i{
+    padding-right:5px;
+}
+@media only screen and (max-width: 720px) {
+    section{
+        width:100%;
+    }
+    .link-icon{
+        display:none;
+    }
+    .innerLinks:hover{
+
+        background-color: rgb(255,255,255);
+        color:black;
+        transition:0.1s ease-in;   
+    }
+    body{
+        font-size:0.8rem;
+    }
+    .nav-left{
+        left:0x;
+    }
+    .nav-right{
+        right:0px;
+    }
+    
+    
+  
+}
